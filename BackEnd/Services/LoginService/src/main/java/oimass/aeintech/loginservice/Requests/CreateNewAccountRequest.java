@@ -1,6 +1,0 @@
-
-
-@Getters
-
-class CreateNewAccountRequest {
-}

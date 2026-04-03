@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 
 
 @Entity
-@Table(name = "user_accounts")
 public class UserAccount {
 
     @OneToOne
