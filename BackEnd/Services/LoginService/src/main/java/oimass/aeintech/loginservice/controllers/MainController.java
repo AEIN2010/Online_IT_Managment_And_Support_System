@@ -14,13 +14,5 @@ public class MainController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/register")
-    public User register(@RequestBody User user) {
-        return userService.saveUser(user);
-    }
 
-    @GetMapping("/t")
-    private void test(){
-        System.out.println("test passed");
-    }
 }

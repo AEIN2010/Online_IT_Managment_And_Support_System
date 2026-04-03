@@ -4,11 +4,16 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
+
+@Entity
+@Table(name = "user_accounts")
 public class UserAccount {
 
+    @OneToOne
     private User user;
 
     @Column(unique = true)
+    @Id
     private String username;
     private String password;
     @Column(unique = true)
